@@ -1,0 +1,38 @@
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  p,
+  h2,
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  body {
+    margin: 0;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    background-color: $background-color;
+  }
+  
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
