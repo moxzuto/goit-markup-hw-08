@@ -107,6 +107,12 @@ body {
   text-transform: uppercase;
   color: #212121;
 }
+@media screen and (max-width: 1200px) {
+  .main-list__topic {
+    margin-left: 156px;
+    margin-top: 30px;
+  }
+}
 
 .team-topic {
   font-weight: 700;
@@ -592,8 +598,14 @@ body {
 }
 
 .main-list-item {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .main-list-item {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .main-list-link {
@@ -601,6 +613,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  .main-list-link {
+    display: inline;
+  }
 }
 
 .main-link__item {
@@ -661,10 +678,18 @@ body {
 
 .icon-main {
   display: inline-block;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 190px;
+  margin-right: 190px;
   margin-top: 25px;
-  margin-bottom: 55px;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 1200px) {
+  .icon-main {
+    margin-top: 25px;
+    margin-bottom: 55px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
 
 .icon-main__div {
