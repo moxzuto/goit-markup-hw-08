@@ -609,13 +609,9 @@ body {
     max-width: 1200px;
   }
 }
-@media screen and (min-width: 786px) {
+@media screen and (max-width: 1199px) {
   .main-list-item {
-    max-width: 786px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    max-width: 768px;
   }
 }
 
@@ -635,6 +631,11 @@ body {
 .main-link__item {
   -ms-flex-preferred-size: calc((100% - 90px) / 4);
       flex-basis: calc((100% - 90px) / 4);
+}
+@media screen and (min-width: 768px) {
+  .main-link__item {
+    max-width: 768px;
+  }
 }
 
 .team-section {
