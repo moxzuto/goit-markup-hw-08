@@ -4,6 +4,11 @@ img {
   width: 100%;
   height: auto;
 }
+@media screen and (max-width: 768px) {
+  img {
+    width: 450px;
+  }
+}
 
 p,
 h2,
@@ -135,7 +140,7 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .team-topic {
     font-size: 28px;
     line-height: 33px;
@@ -823,26 +828,39 @@ body {
   padding-top: 94px;
   background-color: #f5f4fa;
 }
-@media screen and (min-width: 480px) {
-  .our-team-group {
-    max-width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .our-team-group {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .our-team-group {
-    max-width: 1200px;
-  }
-}
 
 .team-list-photo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 1200px) {
+  .team-list-photo {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 480px) {
+  .team-list-photo {
+    max-width: 480px;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-list-photo {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list-photo {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-group__image {
+    width: 270px;
+  }
 }
 
 .social-items,
@@ -907,6 +925,12 @@ body {
 .team-portrait-list:nth-child(2n) {
   margin-right: 30px;
   margin-left: 30px;
+}
+@media screen and (max-width: 1900px) {
+  .team-portrait-list:nth-child(2n) {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }
 
 .team__names {
