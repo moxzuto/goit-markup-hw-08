@@ -124,6 +124,15 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 480px) {
+  .team-topic {
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
+}
 
 .policy-checkbox {
   -webkit-appearance: none;
@@ -863,6 +872,11 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .clients-icons {
+    max-width: 480px;
+  }
+}
 
 .logo-items {
   width: 170px;
@@ -871,6 +885,13 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   cursor: pointer;
+}
+@media screen and (min-width: 767px) {
+  .logo-items {
+    padding-left: 52px;
+    padding-right: 52px;
+    max-width: 480px;
+  }
 }
 
 .clients-logo {
@@ -899,6 +920,21 @@ body {
   padding-bottom: 94px;
   padding-top: 94px;
 }
+@media screen and (max-width: 787px) {
+  .our-clients {
+    max-width: 480px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .our-clients {
+    max-width: 786px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-clients {
+    max-width: 1200px;
+  }
+}
 
 .clients-icons,
 .logo-items {
@@ -911,6 +947,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (max-width: 1200px) {
+  .clients-icons,
+.logo-items {
+    gap: 30px;
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-icons,
+.logo-items {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .container-footer {

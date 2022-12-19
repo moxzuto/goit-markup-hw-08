@@ -1,5 +1,9 @@
 .clients-icons {
     display: flex;
+
+    @media screen and (max-width: 768px) {
+      max-width: 480px;
+    }
   }
   
   .logo-items {
@@ -9,12 +13,20 @@
     border: 1px solid #afb1b8;
     border-radius: 4px;
     cursor: pointer;
+
+    
+    @media screen and (min-width: 767px) {
+      padding-left: 52px;
+      padding-right: 52px;
+      max-width: 480px;
+    }
   }
   
   .clients-logo {
     width: 106px;
     height: 60px;
     fill: #afb1b8;
+
   }
   
   .clients-logo:hover,
@@ -35,6 +47,18 @@
   .our-clients {
     padding-bottom: 94px;
     padding-top: 94px;
+
+    @media screen and (max-width: 787px) {
+      max-width: 480px;
+    }
+
+    @media screen and (max-width: 1199px) {
+      max-width: 786px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
   }
   
   .clients-icons,
@@ -42,4 +66,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    @media screen and (max-width: 1200px) {
+      gap: 30px;
+      margin-right: 0px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
   }
