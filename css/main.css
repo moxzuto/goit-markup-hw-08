@@ -818,6 +818,27 @@ body {
           justify-content: center;
 }
 
+.our-team-group {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  background-color: #f5f4fa;
+}
+@media screen and (min-width: 480px) {
+  .our-team-group {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-team-group {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team-group {
+    max-width: 1200px;
+  }
+}
+
 .team-list-photo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -901,12 +922,6 @@ body {
 .team-portrait-text {
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-.our-team-group {
-  padding-bottom: 94px;
-  padding-top: 94px;
-  background-color: #f5f4fa;
 }
 
 .team__labor {
