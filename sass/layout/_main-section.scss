@@ -25,6 +25,10 @@
     max-width: 1200px;
   }
 
+  @media screen and (max-width: 1199px) {
+    max-width: 738px;
+  }
+
   display: inline-flex;
   gap: 30px;
   flex-wrap: wrap;

@@ -4,11 +4,6 @@ img {
   width: 100%;
   height: auto;
 }
-@media screen and (max-width: 768px) {
-  img {
-    width: 450px;
-  }
-}
 
 p,
 h2,
@@ -701,6 +696,11 @@ body {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     max-width: 1200px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .main-list-link {
+    max-width: 738px;
   }
 }
 
