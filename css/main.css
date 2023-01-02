@@ -1009,21 +1009,6 @@ body {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-@media screen and (max-width: 787px) {
-  .our-clients {
-    max-width: 480px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .our-clients {
-    max-width: 786px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .our-clients {
-    max-width: 1200px;
-  }
-}
 
 .clients-icons,
 .logo-items {
