@@ -1,11 +1,33 @@
 .container-footer {
-    width: 1200px;
+
+ 
+
+  @media screen and (max-width: 1199px) {
+    max-width: 768px;
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 480px;
+    display: inline-flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
   
-    display: flex;
+    @media screen and (min-width: 1200px) {
+      display: flex;  
+    }
+
     align-items: baseline;
     justify-content: space-between;
   }
@@ -16,6 +38,10 @@
     padding-bottom: 60px;
     justify-content: center;
     display: flex;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
   
   .fotter-address {
@@ -30,10 +56,28 @@
     line-height: 31px;
     letter-spacing: 0.03em;
     color: $background-color;
+
+    @media screen and (min-width: 480px) {
+      margin-left: 34px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 0px;
+    }
   }
   
   .footer-address-list {
     margin-top: 20px;
+
+    @media screen and (min-width: 480px) {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      text-align: inherit;
+      margin-bottom: 0px;
+    }
   }
   
   .footer-map {
@@ -64,11 +108,24 @@
   
   .footer-address {
     margin-right: 0px;
+
+    @media screen and (min-width: 480px) {
+      margin-right: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 0px;
+    }
   }
   
   /* социа футера */
   .footer-social {
     justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+      margin-right: 93px;
+    }
   }
   
   .footer-social__title {
@@ -80,6 +137,14 @@
     color: $background-color;
     width: 116px;
     height: 16px;
+
+    @media screen and (min-width: 480px) {
+      margin-left: 48px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 0px;
+    }
   }
   
   .footer-social__items,
@@ -130,6 +195,14 @@
     position: relative;
     display: block;
     margin-top: 10px;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 166px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 0px;
+    }
   }
   
   .form__text-footer {
@@ -141,6 +214,20 @@
     color: #ffffff;
     display: flex;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 60px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-left: 125px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 0px;
+    }
   }
   
   .form-footer-list {
@@ -148,6 +235,16 @@
   }
   
   .footer-input {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 1199px) {
+      width: 450px;
+      margin-bottom: 20px;
+    }
+
+
     width: 358px;
     height: 50px;
   
@@ -175,6 +272,14 @@
   }
   
   .button-footer-form {
+    @media screen and (max-width: 767px) {
+      margin-left: 125px;
+    }
+
+   @media screen and (max-width: 1199px) {
+    margin-left: 125px;
+   }
+
     font-family: inherit;
     width: 200px;
     height: 50px;
