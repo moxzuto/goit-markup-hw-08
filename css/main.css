@@ -251,6 +251,11 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .contacts-list-item {
+    display: none;
+  }
+}
 
 .header-contacts__link {
   font-weight: 500;
@@ -273,6 +278,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .header-nav-list {
+    display: none;
+  }
 }
 
 /* крайняя геометрия */
@@ -298,6 +308,21 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (min-width: 480px) {
+  .header-container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-container {
+    max-width: 1200px;
+  }
+}
 
 .header-icon {
   fill: currentColor;
@@ -307,6 +332,19 @@ body {
 }
 .header-icon:hover {
   fill: #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .menu-nav {
+    display: block;
+    padding: 0;
+    border: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-nav {
+    display: none;
+  }
 }
 
 /* Backdrop */

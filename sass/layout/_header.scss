@@ -49,11 +49,16 @@
   }
   
   .contacts-list-item {
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
     align-items: center;
     justify-content: center;
     display: flex;
   }
-  
+
+
   .header-contacts__link {
     font-weight: 500;
     font-size: 14px;
@@ -71,6 +76,10 @@
   
   .header-nav-list {
     display: flex;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
   /* крайняя геометрия */
   .header-list-item:not(:last-child),
@@ -85,6 +94,18 @@
   }
   
   .header-container {
+    @media screen and (min-width: 480px) {
+      max-width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
+
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -98,5 +119,18 @@
 
     &:hover {
       fill: $accent-color;
+    }
+  }
+
+
+  .menu-nav {
+    @media screen and (min-width: 480px) {
+      display: block;
+      padding: 0;
+      border: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: none;
     }
   }
