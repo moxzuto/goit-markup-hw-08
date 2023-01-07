@@ -48,6 +48,33 @@
               >
             </li>
           </ul>
+
+          <button class="menu-button" type="button is-open" aria-expanded="false" aria-controls="menu-container"
+          data-menu-button>
+            <svg width="40" height="40" aria-label="Switcher button menu">
+              <use  class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+              <use  class="icon-cross" href="./images/symbol-defs.svg#icon-backdrop-close"></use>
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="menu-lists list">
+              <li class="menu-item-list"><a href="./index.html" class="menu-list">Студія</a></li>
+              <li class="menu-item-list"><a href="./portfolio.html" class="menu-list">Портфоліо</a></li>
+              <li class="menu-item-list"><a href="" class="menu-list">Контакти</a></li>
+            </ul>
+            <ul class="contacts-lists list link">
+              <li class="list"><a href="" class="contacts-menu__number" >+38 096 111 11 11</a></li>
+              <li class="list"><a href=""class="contacts-menu__mail">info@devstudio.com</a></li>
+            </ul>
+
+            <ul class="social-contacts list">
+              <li class="social-contacts__item">Instagram</li>
+              <li class="social-contacts__item">Twitter</li>
+              <li class="social-contacts__item">Facebook</li>
+              <li class="social-contacts__item">LinkedIn</li>
+            </ul>
+            
+          </div>
         </nav>
         <ul class="header-contacts header-container list">
           <li class="contacts-list-item">
@@ -72,12 +99,8 @@
           </li>
         </ul>
 
-        <button class="menu-nav" type="button">
-          <svg width="40" height="40">
-            <use href="./images/icons.svg#icon-menu"></use>
-            <use href="./images/symbol-defs.svg#icon-backdrop-close"></use>
-          </svg>
-        </button>
+    
+
       </div>
     </header>
 
@@ -610,7 +633,8 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <script src="./js/modal.js"></script>
-  </body>  -->
+    <script src="./js/menu.js"></script>
+  </body>  
 </html>
