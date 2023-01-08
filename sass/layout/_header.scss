@@ -60,7 +60,6 @@
 
   @media screen and (min-width: 1200px) {
     justify-content: center;
-
   }
 }
 
@@ -111,8 +110,10 @@
 
 .contacts-list-item:not(:last-child) {
   margin-right: 0px;
+  margin-bottom: 10px;
   @media screen and (min-width: 1200px) {
     margin-right: 50px;
+    margin-bottom: 0;
   }
 
 }

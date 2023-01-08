@@ -109,6 +109,20 @@ body {
     height: 84px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero-text {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 696px;
+    height: 120px;
+    margin-left: 240px;
+  }
+}
 
 .main-list__topic {
   font-weight: 700;
@@ -332,10 +346,12 @@ body {
 
 .contacts-list-item:not(:last-child) {
   margin-right: 0px;
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 1200px) {
   .contacts-list-item:not(:last-child) {
     margin-right: 50px;
+    margin-bottom: 0;
   }
 }
 
@@ -971,12 +987,6 @@ body {
   .main-list-item {
     padding-top: 94px;
     padding-bottom: 94px;
-    max-width: 1200px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .main-list-item {
-    max-width: 768px;
   }
 }
 
